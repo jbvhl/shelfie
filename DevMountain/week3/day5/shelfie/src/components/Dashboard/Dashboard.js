@@ -48,7 +48,10 @@ export default class Dashboard extends Component {
     render() {
         const mappedProducts = this.props.products.map(product => {
             return (
-            <Product product={this.state.product}/>
+            <Product product={product}
+            imgURL={product.imgURL}
+            name={product.name}
+            price={product.price}/>
             )
         });
 
